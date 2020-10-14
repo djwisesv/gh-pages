@@ -1,0 +1,917 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta autor="chiphysi programacion">
+	<title>DjWise Programacion</title>
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/ico" href="assets\img\icono.jpg">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Jura:300,400,500,600" rel="stylesheet">
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="assets\css\bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets\css\nivo-lightbox.css">
+	<link rel="stylesheet" type="text/css" href="assets\owl-carousel\assets\owl.carousel.css">
+	<!-- Theme CSS -->
+	<link rel="stylesheet" type="text/css" href="assets\css\style_electrobase.css">
+</head>
+<body>
+	
+
+	<header id="site-header">
+		<form action="index.php" id="search-header" name="search-header">
+			<input type="search" name="search" placeholder="Type and Hit Enter..">
+			<button>Search</button>
+		</form>
+		<div class="container nav-bar-container">
+			<div class="row nav-row">
+				<div class="logo-container">
+					<a href="index.html">
+						<span class="logo ">djwise<span class="colored">Music</span></span>
+						<br>
+						<span class="tagline colored-orange">Remixes Pro Dj Wise</span>
+					</a>
+				</div>
+				<div id="site-navigation" class="tech-nav">
+					<ul>
+						<li class="active ">
+							<a href="index.html">Inicio</a>
+						</li>
+						<li><a href="albums.html">Álbums</a></li>
+
+						<li><a href="eventos.html">Eventos</a></li>
+
+						<li><a href="#suscribete">Suscribete</a></li>
+
+						<li><a href="#colophon">Nosotros</a></li>
+
+						<li><a href="#contactanos">Contacto</a></li>
+					</ul>
+				</div>
+
+					<div class="extra-nav">
+					<button id="menu-toggle"><i class="fa fa-bars"></i></button>
+					</div>
+		
+			</div>
+		</div>
+	</header>
+
+	<div class="site-content">
+
+
+		<div class="home-player-wrapper-2">
+			<div class="wrapper-container">
+				<div id="jquery_jplayer_1" class="jp-jplayer"></div> 
+				<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+					<div class="jp-type-playlist">
+		
+						<div class="interface-round-wrapper">
+							<div class="jp-gui jp-interface">
+								<div class="jp-controls">
+									<div class="jp-seek-bar">
+										<div class="jp-play-bar"></div>
+									</div>
+									<button id="home-p-mute" class="jp-mute" tabindex="0"><i class="fa fa-volume-up"></i></button>
+									<button class="jp-previous" tabindex='0'><i class="fa fa-backward"></i></button>
+									<button class="jp-play" tabindex='0'><i class="fa fa-play"></i></button>
+									<button class="jp-next" tabindex="0"><i class="fa fa-forward"></i></button>
+									<button id="playlist-toggle"><i class="fa fa-bars"></i></button>
+									<div id="home-p-volume-bar" class="jp-volume-bar">
+										<div class="jp-volume-bar-value"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="h-lines-wrapper">
+							<div class="h-lines-inner-wrapper">
+								<div id="nowPlaying" class="nowPlaying clearfix">
+									<h3 class="artist-name">Nombre del artista</h3>
+									<h3 class="track-name">Nombre de la pista</h3>
+
+									<div class="chevron left chevron-1"></div>
+									<div class="chevron left chevron-2"></div>
+									<div class="chevron left chevron-3"></div>
+
+									<div class="chevron right chevron-1"></div>
+									<div class="chevron right chevron-2"></div>
+									<div class="chevron right chevron-3"></div>
+
+
+								</div>
+							</div>
+						</div>
+				
+						<div class="jp-playlist">
+							<div class="playlist-container container">
+								<ul id="main-player-playlist">
+									<li>&nbsp;</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+
+		<div class="contact-home-wrapper" id="contactanos">
+			<div class="overlay-section">
+				<div class="container section">
+					<div class="section-title pdb-60">
+						<h2>
+							<span class="title-lines left"></span>
+							Contactanos
+							<span class="title-lines right"></span>
+						</h2>
+					</div>
+					<div class="row contact-from">
+						<form class="col-xs-12 general-form clearfix" action="contactame.php" method="post" name="contact" id="contact-form">
+							<div class="field-group row">
+								<div class="field col-sm-4">
+									<h5>Nombre: <span>*</span></h5>
+									<input name="nombre" type="text" class="required" title="ingrese su nombre" placeholder="Nombre o apodo" required="">
+								</div>
+								<div class="field col-sm-4">
+									<h5>Correo: <span>*</span></h5>
+									<input name="correo" type="text" class="required" title="ingrese su correo" placeholder="Correo real para ponernos en contacto" required="">
+								</div>
+								<div class="field col-sm-4">
+									<h5>Asunto</h5>
+									<input name="asunto" type="text" title="ingrese su asunto" placeholder="Asunto" required="">
+								</div>
+							</div>
+							<div class="field">
+								<h5>Mensaje<span>*</span></h5>
+								<textarea name="mensaje" cols="15" rows="5" class="required" placeholder="Mensaje" title="ingrese su mensaje" required=""></textarea>
+							</div>
+							<button class="btn big"><i class="fa fa-paper-plane">victorportillomadrid@gmail.com</i>Enviar mensaje</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="newsletter-wrapper" id="suscribete">
+			<div class="container">
+				<div class="row">
+					<div class="title-block col-xs-12 col-sm-6">
+						<h2 class="newsletter-title"><i class="fa fa-envelope"></i> SUSCRIBETE</h2>
+					</div>
+					<div class="form-block col-xs-12 col-sm-6">
+						<div id="mc_embed_signup">
+							<form action="suscribete.php" method="post" name="mc-embedded-subscribe-form" class="validate">
+									<div class="mc-field-group">
+										<input type="email" value="" name="correo" class="required email emailinput" id="mce-EMAIL" title="Ingrese su correo" placeholder="Agrega aqui tu correo" title="ingrese su correo valido" required="">
+										<div class="button-wrap"><button type="submit" class="button" id="mc-embedded-subscribe">Suscribete</button>
+										</div>
+									</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	
+
+	<footer id="colophon" class="relative-pos ">
+		<div class="container">
+			<div class="row">
+				<div class="widget col-sm-4 about-widget ">
+					<h3 class="widget-title">Nosotros</h3>
+					<p><p class="colored-orange"><a href="https://chat.whatsapp.com/LYKNhgkT279BeNZvDZKwcn">GRUPO WHATSAPP</a></p></p>
+					<p class="colored-orange"><p class="colored-orange"><a href="https://chat.whatsapp.com/LYKNhgkT279BeNZvDZKwcn">GRUPO WHATSAPP</a></p></p>
+					<ul class="social-icons">
+						<li><a class="fa fa-facebook" href="https://www.facebook.com/groups/chiphysiprogramacion" target="_black"></a></li>
+						<li><a class="fa fa-facebook" href="http://plus.google.com" target="_black"></a></li>
+						<li><a class="fa fa-facebook" href="http://twitter.com" target="_black"></a></li>
+						<li><a class="fa fa-facebook" href="http://spotify.com" target="_black"></a></li>
+						<li><a class="fa fa-facebook" href="http://soundcloud.com" target="_black"></a></li>
+						<li><a class="fa fa-facebook" href="https://www.youtube.com/channel/UC87BrnQy7Y6iipGvQ6sAJfQ" target="_black"></a></li>
+					</ul>
+				</div>
+		
+			</div>
+		</div>
+		<div class="copyright-bar">
+			<div class="container">
+				<p>Copyright 2020 <a href="index.html">Djwise programacion</a> | Todos los derechos reservados</p>
+			</div>
+		</div>
+	</footer>
+
+	
+	<div id="back-to-top" class="fa fa-arrow-circle-up"></div>
+	<div id="pause-player" class="fa fa-play-circle"></div>
+
+
+	<script type="text/javascript" src="assets\js\jquery2.min.js"></script>
+	<script type="text/javascript" src="assets\js\bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets\jplayer\jplayer\jquery.jplayer.min.js"></script>
+	<script type="text/javascript" src="assets\jplayer\add-on\jplayer.playlist.js"></script>
+	<script type="text/javascript" src="assets\owl-carousel\owl.carousel.min.js"></script>
+	<script type="text/javascript" src="assets\js\countdown.js"></script>
+	<script type="text/javascript" src="assets\js\twitterFetcher.js"></script>
+	<script type="text/javascript" src="assets\js\instafeed.min.js"></script>
+	<script type="text/javascript" src="assets\js\imagesloaded.pkgd.min.js"></script>
+	<script type="text/javascript" src="assets\js\masonry.pkgd.min.js"></script>
+	<script type="text/javascript" src="assets\js\nivo-lightbox.min.js"></script>
+	<script type="text/javascript" src="assets\js\jquery.validate.min.js"></script>
+	<script type="text/javascript" src="assets\js\mc.validate.js"></script>
+	<script type="text/javascript" src="assets\js\custom_js.js"></script>
+	<script type="text/javascript">
+	jQuery(document).ready(function($) {
+    	"use strict";
+    	var changeTrack = function changeTrack(event) {
+	        var current = myPlaylist.current,
+	        	playlist = myPlaylist.playlist;       
+	        $.each(playlist, function (index, obj) {
+	            if (index == current) {
+	                $("#nowPlaying .artist-name").html(obj.artist);
+	                $("#nowPlaying .track-name").html(obj.title);
+	            }
+	        });
+	    };
+
+		var myPlaylist = new jPlayerPlaylist({
+			jPlayer: "#jquery_jplayer_1",
+			cssSelectorAncestor: "#jp_container_1",
+		}, [
+			{
+				artist: "CHINO MIRANDA FT J BALVIN",
+				title:"EL PEOR",
+				mp3:"assets/mp3/95-EL PEOR-CHINO MIRANDA FT J BALVIN-(CORO)-DJ WILLIAM VALDIVIA.mp3",
+				free: true
+			},
+			{	
+				artist: "BANDOLERA SOLTERA -REMIX",
+				title:"BANDOLERA SOLTERA -REMIX",
+				mp3:"assets/mp3/95-BANDOLERA SOLTERA -REMIX-(DIRECT)-DJ WILLIAM VALDIVIA.mp3"
+			},
+			{
+				artist: "TITO EL BAMBINO FT CHENCHO",
+				title:"A QUE NO TE ATREVES",
+				mp3:"assets/mp3/95-A QUE NO TE ATREVES-TITO EL BAMBINO FT CHENCHO-(IN ACAPELLA)-DJ WILLIAM VALDIVIA.mp3"
+			},
+			{
+				artist: "A QUE NO TE ATREVES VS TU Y YO",
+				title:"A QUE NO TE ATREVES",
+				mp3:"assets/mp3/95-A QUE NO TE ATREVES VS TU Y YO-(MASHUP)-DJ WILLIAM VALDIVIA.mp3"
+			},
+			{
+				artist: "DAVID GHETTA X J BALVIN X BEBE",
+				title:"SAY MY NAME",
+				mp3:"assets/mp3/95-128-SAY MY NAME-DAVID GHETTA X J BALVIN X BEBE-(GROOVE)- DJ WILLIAM VALDIVIA.mp3"
+			},
+			{
+				artist: "ASTRONOMIA",
+				title:"ASTRONOMIA",
+				mp3:"assets/mp3/95-128-ASTRONOMIA- (DIRECTO)-DJ WILLIAM VALDIVIA # GROVVE.mp3"
+			},
+			{
+				artist: "Daddy Yankee ",
+				title:"Shaky Shaky",
+				mp3:"assets/mp3/95  Daddy Yankee   Shaky Shaky   Intro    Sergio D - 128K MP3.mp3"
+			},
+			{
+				artist: "OZUNA",
+				title:"YA ME DIJERON",
+				mp3:"assets/mp3/94-YA ME DIJERON OZUNA-(VER 1)-DJ WILLIAM VALDIVIA.mp3"
+			},
+			{   
+				artist: "KEVIN ROLDAN",
+				title:"PPP",
+				mp3:"assets/mp3/94-PPP-KEVIN ROLDAN-(CORO)-DJ WILLIAM VALDIVIA.mp3"
+			},
+			{   
+				artist: "J BALVIN",
+				title:"-PARA QUE TE QUEDES",
+				mp3:"assets/mp3/94-PARA QUE TE QUEDES J BALVIN-(CORO PERREO) -DAVID GHETTA FT DJ WILLIAM VALDIVIA.mp3"
+			},
+			{   
+				artist: "NACHO FT WISIN NORIEL",
+				title:"NO TE VAS",
+				mp3:"assets/mp3/94-NO TE VAS-NACHO FT WISIN NORIEL-(CORO)-DJ WILLIAM VALDIVIA.mp3"
+			},
+			{   
+				artist: "ANA GUERRA FT JUAN MAGAN",
+				title:"NI LA HORA",
+				mp3:"assets/mp3/94-NI LA HORA -ANA GUERRA FT JUAN MAGAN -(CORO)-DJ WILLIAM VALDIVIA.mp3"
+			},
+			{   
+				artist: "Daddy Yankee",
+				title:"Snow - Con Calma",
+				mp3:"assets/mp3/94 BPM - Daddy Yankee Ft Snow - Con Calma (Reggaeton Intro Outro) DJ Rivera IR.mp3"
+			},
+			{	
+				artist: "KEN-Y ft. NICKY JAM",
+				title:"COMO LO HACIA YO",
+				mp3:"assets/mp3/94 - COMO LO HACIA YO - KEN-Y ft. NICKY JAM _ #IntroAcapella _ RMX _ By DJ CHINO GT.mp3"
+			},
+			{	
+				artist: "Wisin Yandel Bad Bunny",
+				title:"Dame algo",
+				mp3:"assets/mp3/93 BPM - Wisin Yandel Bad Bunny - Dame algo (Reggaeton Intro Outro) DJ Rivera IR.mp3"
+			},
+			{	
+				artist: "Farruko",
+				title:"Lejos De Aqui",
+				mp3:"assets/mp3/93 - Farruko - Lejos De Aqui (Remix by Dj Euro Crew 2014).mp3"
+			},
+			{	
+				artist: "OZUNA",
+				title:"UNICA",
+				mp3:"assets/mp3/92-UNICA OZUNA-(CORO)-DJ WILLIAM VALDIVIA.mp3"
+			},
+			{	
+				artist: "OZUNA FT  ANUEL",
+				title:"SUPUESTAMENTE",
+				mp3:"assets/mp3/92-SUPUESTAMENTE OZUNA FT  ANUEL-(CORO)-DJ WILLIAM VALDIVIA.mp3"
+			},
+			{	
+				artist: "SECH FT JUSTIN QUILES",
+				title:"QUE MAS PUES",
+				mp3:"assets/mp3/92-QUE MAS PUES SECH FT JUSTIN QUILES-(PASE SALSA)-DJ WILLIAM VALDIVIA.mp3"
+			},
+			{	
+				artist: "JUSTIN QUILES-(PASE RAP)",
+				title:"QUE MAS PUES",
+				mp3:"assets/mp3/92-QUE MAS PUES SECH FT JUSTIN QUILES-(PASE RAP)-DJ WILLIAM VALDIVIA.mp3"
+			},
+			{	
+				artist: "JUSTIN QUILES",
+				title:"QUE MAS PUES",
+				mp3:"assets/mp3/92-QUE MAS PUES SECH FT JUSTIN QUILES-(IN ANIMACION MACHOS VS MUJERES)-DJ WILLIAM VALDIVIA.mp3"
+			},
+			{	
+				artist: "SECH FT VARIOS",
+				title:"QUE MAS PUES",
+				mp3:"assets/mp3/92-QUE MAS PUES REMIX-SECH FT VARIOS-(IO)-DJ WILLIAM VALDIVIA.mp3"
+			},
+			{	
+				artist: "SECH FT VARIOS-(CORO)",
+				title:"QUE MAS PUES",
+				mp3:"assets/mp3/92-QUE MAS PUES REMIX-SECH FT VARIOS-(CORO)-DJ WILLIAM VALDIVIA.mp3"
+			},
+			{	
+				artist: "SECH ANUEL OZUNA FT VARIOS",
+				title:"OTRO TRAGO",
+				mp3:"assets/mp3/92-OTRO TRAGO REMIX-(DIRECT) -SECH ANUEL OZUNA FT VARIOS-DJ WILLIAM VALDIVIA.mp3"
+			},
+			{	
+				artist: "SECH ANUEL OZUNA FT VARIOS",
+				title:"OTRO TRAGO",
+				mp3:"assets/mp3/92-OTRO TRAGO REMIX -SECH ANUEL OZUNA FT VARIOS-DJ WILLIAM VALDIVIA.mp3"
+			},
+			{	
+				artist: "ORQUESTA NSAMBLE",
+				title:"ME VAS A EXTRAÑAR",
+				mp3:"assets/mp3/92-ME VAS A EXTRAÑAR -ORQUESTA NSAMBLE-(VER 1)-DJ WILLIAM VALDIVIA.mp3"
+			},
+			{	
+				artist: "DADDY YANKEE FT NATTI NATASHA",
+				title:"ELLA QUIERE ZUM ZUM",
+				mp3:"assets/mp3/92-ELLA QUIERE ZUM ZUM- DADDY YANKEE FT NATTI NATASHA- VARIOS-(INTRO)DJ WILLIAM VALDIVIA.mp3"
+			},
+			{	
+				artist: "GROOVE VENTA",
+				title:"PA MI",
+				mp3:"assets/mp3/92-128-PA MI REMIX FT BAILA CONMIGO -GROOVE VENTA -DJ WILLIAM VALDIVIA.mp3"
+			},
+			{	
+				artist: "MAITE PERRONI FT REYKON-AVICII",
+				title:"BUM BUM DALE DALE",
+				mp3:"assets/mp3/92-128-BUM BUM DALE DALE-MAITE PERRONI FT REYKON-AVICII FT DJ WILLIAM VALDIVIA.mp3"
+			},
+			{	
+				artist: "Arcangel Ozuna Farruko",
+				title:"Si  Tu Marido No Te Quiere",
+				mp3:"assets/mp3/92 Si  Tu Marido No Te Quiere Remix Arcangel Ozuna Farruko DJ JERSON MIX JAEN FT DJ TONY.mp3"
+			},
+			{	
+				artist: "MAKANO",
+				title:"CUADERNO DALEX",
+				mp3:"assets/mp3/92- CUADERNO DALEX -REMIX-MAKANO (MASHUP)-DJ WILLIAM VALDIVIA.mp3"
+			},
+			{
+				artist: "Don Chezina",
+				title:"Don Chezina ",
+				mp3:"assets/mp3/92 BPM - Wisin Feat Don Chezina - 3G (Reggaeton Intro Outro) DJ Rivera IR.mp3"
+			},
+			{
+				artist: "Jeancarlos Canela",
+				title:"Bajito",
+				mp3:"assets/mp3/092 Jeancarlos Canela Ft Kymani Marley  Bajito DJ Jose Fuentes-[Mp3 Boomer Download Music].mp3"
+			},
+			{   
+				artist: "NICKY JAM FT J BALVIN",
+				title:"X(EQUIS)",
+				mp3:"assets/mp3/90-X(EQUIS)-NICKY JAM FT J BALVIN-(CORO)-DJ WILLIAM VALDIVIA.mp33"
+			},
+			{   
+				artist: "THE VAMPS",
+				title:"WE DONT CARE",
+				mp3:"assets/mp3/90-WE DONT CARE-SIGALA THE VAMPS-DJ WILLIAM VALDIVIA - copia.mp3"
+			},
+			{   
+				artist: "VAMPS-(IO)",
+				title:"WE DONT CARE",
+				mp3:"assets/mp3/90-WE DONT CARE-SIGALA THE VAMPS-(IO)-DJ WILLIAM VALDIVIA.mp3"
+			},
+			{   
+				artist: "BEMBE ORQUESTA-(IN ACAPELLA)",
+				title:"AMIGOS NO PORFAVOR",
+				mp3:"assets/mp3/90-AMIGOS NO PORFAVOR-BEMBE ORQUESTA-(IN ACAPELLA)-DJ WILLIAM VALDIVIA.mp3"
+			},
+			{   
+				artist: "Residente Ft B",
+				title:"Bellacoso",
+				mp3:"assets/mp3/90 BPM - Residente Ft B - Bellacoso (Reggaeton Intro Outro) DJ Rivera IR.mp3"
+			},
+			{	
+				artist: "Jowell Ft Maldy",
+				title:"Perreo 101",
+				mp3:"assets/mp3/90 BPM - Jowell Ft Maldy y A - Perreo 101 (Reggaeton Intro Outro) DJ Rivera IR.mp3"
+			},
+			{	
+				artist: "Guaynaa",
+				title:"Rebota",
+				mp3:"assets/mp3/90 BPM - Guaynaa - Rebota (Reggaeton Intro Outro) DJ Rivera IR.mp3"
+			},
+			{	
+				artist: "Bad bunny",
+				title:"Solo de mi",
+				mp3:"assets/mp3/90 BPM - Bad bunny - Solo de mi (Reggaeton Intro Outro) DJ Rivera IR.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/88-RUNUWAY-DADDY YANKE FT SEBASTIAN YATRA -NATTI NATASHA-(VERS 1)-DJ WILLIAM VALDIVIA.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/88-RUNUWAY-DADDY YANKE FT SEBASTIAN YATRA -NATTI NATASHA-(CORO)-DJ WILLIAM VALDIVIA.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/88 Si Te Dejas Llevar  Ozuna Ft Juanka El Problematik Dj Lbc Edit-[Mp3 Boomer Download Music].mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/88 BPM - J Balvin - Reggaeton (Reggaeton Intro Outro) DJ Rivera IR.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/087 Maluma  El Perdedor KeveenIntro-[Mp3 Boomer Download Music].mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/86 BPM ABUSADORA  Jory Ft  J Alvarez  EDIT DJ SURPRISE-[Mp3 Boomer Download Music].mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/86 BPM - Ivy Queen - Llego La Queen (Reggaeton Intro Outro) DJ Rivera IR.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/83 BPM - Chencho Corleone Ft Miky - Impaciente (Reggaeton Intro Outro) DJ Rivera IR.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/82 BPM - Maldy - Orden de Cateo (Reggaeton Intro Outro) DJ Rivera IR.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/80-THE WAVE-R3HAB FT LIA MARIE-(CORO)-DJ WILLIAM VALDIVIA.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/78-TE AMO ZAFIRO RAP-DJ WILLIAM VALDIVIA.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/77-AHORA DICE MORE MORE-ALEX ROSE FT JORY BOY-(INTRO)-DJ WILLIAM VALDIVIA.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/77-90-KARMA ABRAHAM MATEO-DJ WILLIAM VALDIVIA.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/75-88-RUNUWAY-DADDY YANKE FT SEBASTIAN YATRA -(IN TRAP)-NATTI NATASHA-DJ WILLIAM VALDIVIA.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/65-TU TURNO MICRO TDH FT BG SOTO FT VARIOS-DJ WILLIAM VALDIVIA.mp3"
+			},
+			{
+				artist: "no editado",
+				title:"no editado ",
+				mp3:"assets/mp3/65-PERCOPCET LENNY TAVAREZ FT VARIOS-DJ WILLIAM VALDIVIA.mp3"
+			},
+			{
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/60-DILES -BAD BUNNY-OZUNA FT VARIOS-[IN ANIMACION -ACTIVAR GO]-DJ WILLIAM VALDIVIA.mp3"
+			},
+			{   
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/52-O SENTIMIENTOS-REMIX NORIEL FT VARI8OS-DJ WILLIAM VALDIVIA.mp3"
+			},
+			{   
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/50 sobras de Austin- Arcangel (Extended 90 bpm) Ghetto Dj Hits Productions.mp3"
+			},
+			{   
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/43-Q Park - AY AY AY Edit By Dj Alex Ft Star Productions IM.mp3"
+			},
+			{   
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/40_ Devuelveme a mi Chica - Hombres G =DVJ ALEXX EL ORIGINAL= 2019=2020.mp3"
+			},
+			{   
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/39_ Don Miguelo - Pegaito =DVJ ALEXX EL ORIGINAL= 2019=2020.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/38_ Contefor Amyntas - John Cena =DVJ ALEXX EL ORIGINAL= 2019=2020.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/37_ Yannc Ft. Darkiel - Sigue Bailandome =DVJ ALEXX EL ORIGINAL= 2019=2020.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/36_ Gemeliers Feat Joey Montana & Sharlene - Lento =DVJ ALEXX EL ORIGINAL= 2019=2020.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/35_ Gaviria Feat Jowell Y Randy - No Te Quedes En Casa =DVJ ALEXX EL ORIGINAL= 2019=2020.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/35. Yandel - Zumba (Extended 2019) JosèDJ 94Bpm.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/34_ Farruko - Nalgas Pa' Arriba =DVJ ALEXX EL ORIGINAL= 2019=2020.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/34. Silvestre Dangond Ft. Natti Natasha - Justicia - (Extended - 2018) José Dj.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/33_ Farruko - Inolvidable =DVJ ALEXX EL ORIGINAL= 2019=2020.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/33. Rvssian Ft. Farruko y J Balvin - Ponle - (Extended - 2018) José Dj -94-Bpm.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/32_ Farruko - Coolant =DVJ ALEXX EL ORIGINAL= 2019=2020.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/32. Amantes Greeicy - Mike Bahia (Extended 2018) JoséDj.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/31_ Fanny Lu Feat Noriel - Romper El Hielo =DVJ ALEXX EL ORIGINAL= 2019=2020.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/31. Lirico En La Casa - Marianela - (Extended - 2018) José Dj -117-Bmp.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/30_ Erre XI - Si Besa Bien =DVJ ALEXX EL ORIGINAL= 2019=2020.mp33"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/30. Lirico En La Casa - El Motorcito - (Extended - 2018) José Dj -118-Bmp.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/29_ Enrique Iglesias Feat Pitbull - Move To Miami =DVJ ALEXX EL ORIGINAL= 2019=2020.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/29. Ozuna Ft. Luis Fonsi - Imposible (Extended - 2018) José Dj -91-Bpm.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/28_ Ella Quiere Scooby Doo Pa Pa Coolie Perreo =DVJ ALEXX EL ORIGINAL= 2019=2020.mp3"
+			},
+			{
+				artist: "no editado",
+				title:"no editado ",
+				mp3:"assets/mp3/28. Ozuna Ft. Anuel AA - Supuestamente - (Extended 2018) José Dj 87-Bmp.mp3"
+			},
+			{
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/27_ Don Omar - Hoy Se Vale Too =DVJ ALEXX EL ORIGINAL= 2019=2020.mp3"
+			},
+			{   
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/27. Ozuna Ft Selena, Cardi B - Taki Taki (Extended - 2018) José Dj -96-Bpm.mp3"
+			},
+			{   
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/26_ Don Omar - Es Algo Timida =DVJ ALEXX EL ORIGINAL= 2019=2020.mp3"
+			},
+			{   
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/26. Ozuna - Tu Olor - (Extended - 2018) José Dj -97-Bpm.mp3"
+			},
+			{   
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/25_ Ozuna, Selena Gomez Y Cardi B - Taki Taki =DVJ ALEXX EL ORIGINAL= 2019=2020.mp3"
+			},
+			{   
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/25. Ozuna - Ibiza - (Extended 2018) José Dj - 96-Bmp.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/24_ De La Ghetto Feat J Balvin - Caliente =DVJ ALEXX EL ORIGINAL= 2019=2020.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/24. Ozuna - Escape - (Extended 2018) José Dj - 86-Bmp.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/23_ Danny Romero Feat Jowell & Randy - Kamasutra =DVJ ALEXX EL ORIGINAL= 2019=2020.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/23. Ozuna - Comentale - (Extended - 2018) José Dj -102-Bmp.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/22_ Danny Fornaris X Tito El Bambino X Jani Sanchez - El Plan =DVJ ALEXX EL ORIGINAL= 2019=2020.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/22. Ozuna - Aunque Me Porte Mal - (Extended 2018) José Dj - 96-Bmp.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/21_ Daniel Beta Feat Sebastian Yatra - Quedate De Sol A Sol =DVJ ALEXX EL ORIGINAL= 2019=2020.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/21. Mozart La Para & Justin Quiles - Mujeres - (Extended - 2018) José Dj -100-Bmp.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/20_  Sofia Reyes Ft Rita Ora, Anitta - R I P =DVJ ALEXX EL ORIGINAL= 2019=2020.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/20. Lo Blanquito X Milo K  -  Party y Playa (Extended - 2018) José Dj -90-Bpm.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/19. Metele Pa Tras - (Edit - 2018)  - José Dj -100-Bpm.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/18. Leslie Grace & Wisin - Dulce (Extended - 2018) José Dj -87-Bpm.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/17_ POR QUE TE DEMORAS - PLAN B - INTRO =DVJ ALEXX EL ORIGINAL= 2019=2020.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/17. J King y Maximan Ft. Reykon - Mermelada (Extended 2018) José Dj -90-Bpm.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/16. J Alvarez Ft Cosculluela - De La Mia Personal (Extended 2019) JosèDJ 93Bpm.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/16 - Un Beso (Extended 2015) Dj Rivera I.R.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/16 - Candela (Extended 2015) Dj Rivera I.R.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/15_ VEN BAILALO - Angel & Khriz =DVJ ALEXX EL ORIGINAL= 2019=2020.mp3"
+			},
+			{
+				artist: "no editado",
+				title:"no editado ",
+				mp3:"assets/mp3/regueton3.mp3"
+			},
+			{
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/15. Guayando Tra (Remix - Tiestoriki) - Edit -  JoséDj2017.mp33"
+			},
+			{   
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/15 Que Se Sienta Yomo Ft. Hector El Father Intro Outro (Black Dj Imcomparablemente)SMP.mp3"
+			},
+			{   
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/15 - Nena Mala (Extended 2015) Dj Rivera I.R.mp3"
+			},
+			{   
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/15 - La Pelicula (Extended 2015) Dj Rivera I.R.mp3"
+			},
+			{   
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/14_ LO QUE PASO PASO - Daddy Yanke ¡¡Cut!! =DVJ ALEXX EL ORIGINAL= 2019=2020.mp3"
+			},
+			{   
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/14. Farruko - Coolant (Extended 2018) José Dj 84-Bmp.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/14 Pa Bajarte el Calentamiento Jadiel Intro Outro(Black Dj Imcomparablemente)SMP.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/14 Daddy Yankee Ft. Sech - Definitivamente (Extended Version) Prod. El Emperador.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/14 - El Punto (Extended 2015) Dj Rivera Feat Dj Dexter I.R.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/13_ Saoco x En La Disco Apreta - Trebol Clan x Daddy Yankee x Wisin Yandel =DVJ ALEXX EL ORIGINAL= 2019=2020.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/13. Imaginaste - Jhay Cortez (Ft. Wisin & Yandel) (Extended) Prod. By Joseph Dj IM.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/13. Daddy Yankee Ft. Anuel - Adictiva (Extended - 2018) José Dj -99-Bpm.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/13 Bad Bunny - Yo Perreo Sola (Extended Version) Prod. El Emperador.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/13 - Pum Pum - EMUS DJ.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/13 - Dale Frontu (Extended 2015) Dj Rivera I.R.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/12_ Paloma Mami - Fingías =DVJ ALEXX EL ORIGINAL= 2019=2020.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/12. No Me Conoce (Remix) [Ft. J Balvin y Bad Bunny] - (Extended) Prod. By Joseph Dj IM.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/12. Daddy Yankee - Vaiven (Extended).mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/12 De La Ghetto Ft. Darell - El Que Se Enamora Pierde (Extended Version) Prod. El Emperador.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/12 - Probando (Extended 2015) Deejay Rivera I.R.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/11_ Danny Ocean - Veneno =DVJ ALEXX EL ORIGINAL= 2019=2020.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/11_ Danny Ocean - Veneno =DVJ ALEXX EL ORIGINAL= 2019=2020.mp3"
+			},
+			{	
+				artist: "no editado",
+				title:"no editado",
+				mp3:"assets/mp3/11_ Danny Ocean - Veneno =DVJ ALEXX EL ORIGINAL= 2019=2020.mp3"
+			},
+			
+            
+		],{
+			playlistOptions: {
+			    enableRemoveControls: true
+			},
+			swfPath: "assets/jplayer/jplayer",
+			supplied: "oga, mp3",
+			wmode: "window",
+			useStateClassSkin: true,
+			autoBlur: false,
+			smoothPlayBar: false, 
+            ready: changeTrack,
+		    play: changeTrack
+		});
+	});
+	</script>
+
+</body>
+</html>
